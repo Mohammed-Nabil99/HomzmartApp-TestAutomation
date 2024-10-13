@@ -1,0 +1,56 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "SmokeTest">
+    <test name = "SmokeTest" preserve-order="true" parallel="none" >
+    <classes>
+        <class name="Login.LoginTests">
+            <methods>
+                <include name="testValidLogin"/>
+            </methods>
+        </class>
+        <class name="Logout.LogoutTests">
+            <methods>
+                <include name="testLogout"/>
+            </methods>
+        </class>
+        <class name="SignUp.SignUpTests">
+            <methods>
+                <include name="testValidRegister"/>
+            </methods>
+        </class>
+        <class name="SortAndFilter.SortTests">
+            <methods>
+                <include name="testSortHighToLow"/>
+            </methods>
+        </class>
+        <class name="Cart.CartTests">
+            <methods>
+                <include name="testAddItemToCart"/>
+                <include name="testAddValidPromoCode"/>
+                <include name="testCheckout"/>
+            </methods>
+        </class>
+        <class name="EditProfile.EditProfileTests">
+            <methods>
+                <include name="testEditFirstName"/>
+            </methods>
+        </class>
+        <class name="Settings.SettingsTests">
+            <methods>
+                <include name="testChangeCountry"/>
+            </methods>
+        </class>
+        <class name="Category.CategoryTests">
+            <methods>
+                <include name="testFurnitureCategory"/>
+            </methods>
+        </class>
+
+        <class name="SortAndFilter.FilterTests">
+            <methods>
+                <include name="testFirstFilter"/>
+            </methods>
+        </class>
+    </classes>
+    </test>
+</suite>
