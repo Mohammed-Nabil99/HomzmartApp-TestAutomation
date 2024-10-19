@@ -26,8 +26,8 @@ Ensure you have the following tools installed:
 - **IntelliJ**
 - **Maven**
 - **Appium Server**
-- **Android Studio** (for Android SDKs)
-- **TestNG plugin** (if using an IDE like Eclipse or IntelliJ)
+- **Android Studio** (optional)
+
 
 ### Running the Tests
 
@@ -36,7 +36,10 @@ Ensure you have the following tools installed:
     ```bash
     git clone https://github.com/Mohammed-Nabil99/HomzmartApp-TestAutomation.git
     ```
+2. run appium desktop
 
-2. Navigate to the project directory using IntelliJ and open file: SmokeTest.xml then run the file and you will see the test cases begin to run 
+3. run android studio in case of not using real device
 
-3. After execution, the report will be generated under the `/test-output` 
+4. Navigate to the project directory using IntelliJ and open file: SmokeTest.xml then run the file and you will see the test cases begin to run
+
+5. After execution, the report will be generated under the `/test-output` 
